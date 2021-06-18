@@ -1,0 +1,63 @@
+
+# Term: required documents
+@required\ documents#plural = required documents
+
+# CountryDomain
+CountryDomain#concept.label = Country Domain
+CountryDomain.argentina#instance.label = Argentina
+CountryDomain.canada#instance.label = Canada
+CountryDomain.france#instance.label = France
+CountryDomain.mexico#instance.label = Mexico
+CountryDomain.unitedKingdom#instance.label = United Kingdom
+CountryDomain.unitedStatesOfAmerica#instance.label = United States Of America
+
+# DocumentDomain
+DocumentDomain#concept.label = Document Domain
+DocumentDomain.AMLPoliciesAndProcedures#instance.label = AML Policies and Procedures
+DocumentDomain.AMLQuestionnaire#instance.label = AML Questionnaire
+DocumentDomain.AMLRepresentationLetter#instance.label = AML Representation Letter
+DocumentDomain.AMLServiceProviderVerification#instance.label = AML Service Provider Verification
+DocumentDomain.annualReportFinancialStatements#instance.label = Annual Report Financial Statements
+DocumentDomain.bankingLicense#instance.label = Banking License
+DocumentDomain.bearerShareVerification#instance.label = Bearer Share Verification
+DocumentDomain.constitutionalDocument#instance.label = Constitutional Document
+DocumentDomain.foreignBankCertificate#instance.label = Foreign Bank Certificate
+DocumentDomain.formationCertificate#instance.label = Formation Certificate
+DocumentDomain.formationDocument#instance.label = Formation Document
+DocumentDomain.offeringDocuments#instance.label = Offering documents
+DocumentDomain.proofOfAddress#instance.label = Proof of Address
+DocumentDomain.proofOfAffiliation#instance.label = Proof of Affiliation
+DocumentDomain.proofOfExchangeListing#instance.label = Proof of Exchange Listing
+DocumentDomain.proofOfExistence#instance.label = Proof of Existence
+DocumentDomain.proofOfIdentification#instance.label = Proof of Identification
+DocumentDomain.proofOfManagementRelationship#instance.label = Proof of Management Relationship
+DocumentDomain.proofOfRegistration#instance.label = Proof of Registration
+DocumentDomain.proofOfRegulation#instance.label = Proof of Regulation
+DocumentDomain.wolfsbergQuestionnaire#instance.label = Wolfsberg Questionnaire
+
+# DocumentationResponse
+DocumentationResponse#concept.label = Documentation Response
+DocumentationResponse.DocumentationResponse(java.util.List,java.util.List)#phrase.navigation = a new {Documentation Response} where {0, required documents} {1, validation messages}
+DocumentationResponse.addTo_newAttributes(DocumentDomain)#phrase.action = add {0} to the required documents of {this}
+DocumentationResponse.addTo_validationMessageses(java.lang.String)#phrase.action = add {0} to the validation messageses of {this}
+DocumentationResponse.clear_newAttributes()#phrase.action = clear the required documents of {this}
+DocumentationResponse.clear_validationMessageses()#phrase.action = clear the validation messageses of {this}
+DocumentationResponse.newAttributes#phrase.action = set the required documents of {this} to {required documents}
+DocumentationResponse.newAttributes#phrase.navigation = {required documents} of {this}
+DocumentationResponse.removeFrom_newAttributes(DocumentDomain)#phrase.action = remove {0} from the required documents of {this}
+DocumentationResponse.removeFrom_validationMessageses(java.lang.String)#phrase.action = remove {0} from the validation messageses of {this}
+DocumentationResponse.validationMessageses#phrase.action = set the validation messageses of {this} to {validation messages}
+DocumentationResponse.validationMessageses#phrase.navigation = {validation messages} of {this}
+
+# PrimaryBusinessPurposeDomain
+PrimaryBusinessPurposeDomain#concept.label = Primary Business Purpose Domain
+PrimaryBusinessPurposeDomain.BROKERDEALER#instance.label = BROKER DEALER
+PrimaryBusinessPurposeDomain.CENTRALBANK#instance.label = CENTRAL BANK
+PrimaryBusinessPurposeDomain.FIDEPOSIT#instance.label = FI DEPOSIT
+PrimaryBusinessPurposeDomain.GOVERNMENT#instance.label = GOVERNMENT
+PrimaryBusinessPurposeDomain.HDGPEVC#instance.label = HDG PE VC
+PrimaryBusinessPurposeDomain.INSURER#instance.label = INSURER
+PrimaryBusinessPurposeDomain.INVESTORADVISOR#instance.label = INVESTOR ADVISOR
+PrimaryBusinessPurposeDomain.MSB#instance.label = MSB
+PrimaryBusinessPurposeDomain.MUTUALFUND#instance.label = MUTUAL FUND
+PrimaryBusinessPurposeDomain.SPV#instance.label = SPV

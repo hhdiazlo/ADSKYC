@@ -1,0 +1,210 @@
+
+
+public class CountryDomain
+        extends java.lang.Enum
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Country Domain"
+        property "de.generated" "true"
+{
+    domain {static argentina, static canada, static france, static mexico, static unitedKingdom, static unitedStatesOfAmerica}
+    public static final readonly CountryDomain argentina
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Argentina";
+    public static final readonly CountryDomain canada
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Canada";
+    public static final readonly CountryDomain france
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "France";
+    public static final readonly CountryDomain mexico
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Mexico";
+    public static final readonly CountryDomain unitedKingdom
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "United Kingdom";
+    public static final readonly CountryDomain unitedStatesOfAmerica
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "United States Of America";
+}
+
+public class DocumentDomain
+        extends java.lang.Enum
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Document Domain"
+        property "de.generated" "true"
+{
+    domain 
+    {
+        static AMLPoliciesAndProcedures,
+        static AMLQuestionnaire,
+        static AMLRepresentationLetter,
+        static AMLServiceProviderVerification,
+        static annualReportFinancialStatements,
+        static bankingLicense,
+        static bearerShareVerification,
+        static constitutionalDocument,
+        static foreignBankCertificate,
+        static formationCertificate,
+        static formationDocument,
+        static offeringDocuments,
+        static proofOfAddress,
+        static proofOfAffiliation,
+        static proofOfExchangeListing,
+        static proofOfExistence,
+        static proofOfIdentification,
+        static proofOfManagementRelationship,
+        static proofOfRegistration,
+        static proofOfRegulation,
+        static wolfsbergQuestionnaire
+    }
+    public static final readonly DocumentDomain AMLPoliciesAndProcedures
+                property "ads.attributeId" "18"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AML Policies and Procedures";
+    public static final readonly DocumentDomain AMLQuestionnaire
+                property "ads.attributeId" "12"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AML Questionnaire";
+    public static final readonly DocumentDomain AMLRepresentationLetter
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AML Representation Letter";
+    public static final readonly DocumentDomain AMLServiceProviderVerification
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AML Service Provider Verification";
+    public static final readonly DocumentDomain annualReportFinancialStatements
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Annual Report Financial Statements";
+    public static final readonly DocumentDomain bankingLicense
+                property "ads.attributeId" "16"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Banking License";
+    public static final readonly DocumentDomain bearerShareVerification
+                property "ads.attributeId" "15"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Bearer Share Verification";
+    public static final readonly DocumentDomain constitutionalDocument
+                property "ads.attributeId" "21"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Constitutional Document";
+    public static final readonly DocumentDomain foreignBankCertificate
+                property "ads.attributeId" "17"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Foreign Bank Certificate";
+    public static final readonly DocumentDomain formationCertificate
+                property "ads.attributeId" "20"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Formation Certificate";
+    public static final readonly DocumentDomain formationDocument
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Formation Document";
+    public static final readonly DocumentDomain offeringDocuments
+                property "ads.attributeId" "19"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Offering documents";
+    public static final readonly DocumentDomain proofOfAddress
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Proof of Address";
+    public static final readonly DocumentDomain proofOfAffiliation
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Proof of Affiliation";
+    public static final readonly DocumentDomain proofOfExchangeListing
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Proof of Exchange Listing";
+    public static final readonly DocumentDomain proofOfExistence
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Proof of Existence";
+    public static final readonly DocumentDomain proofOfIdentification
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Proof of Identification";
+    public static final readonly DocumentDomain proofOfManagementRelationship
+                property "ads.attributeId" "11"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Proof of Management Relationship";
+    public static final readonly DocumentDomain proofOfRegistration
+                property "ads.attributeId" "13"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Proof of Registration";
+    public static final readonly DocumentDomain proofOfRegulation
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Proof of Regulation";
+    public static final readonly DocumentDomain wolfsbergQuestionnaire
+                property "ads.attributeId" "14"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Wolfsberg Questionnaire";
+}
+
+public class DocumentationResponse
+        property "ads.typeId" "4"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Documentation Response"
+        property "de.generated" "true"
+{
+    public java.util.List newAttributes domain 0,* class DocumentDomain
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "new attributes"
+                property update "true";
+    public java.util.List validationMessageses domain 0,* class string
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "validation messageses"
+                property update "true";
+    public DocumentationResponse(java.util.List newAttributes domain 0,* class DocumentDomain, 
+        java.util.List validationMessageses domain 0,* class string)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public DocumentationResponse()
+                property "dataio.default" "true";
+    public void addTo_newAttributes(DocumentDomain newAttributes)
+                property collectionAttribute "newAttributes"
+                property update "true";
+    public void addTo_validationMessageses(string validationMessageses)
+                property collectionAttribute "validationMessageses"
+                property update "true";
+    public void clear_newAttributes()
+                property collectionAttribute "newAttributes"
+                property update "true";
+    public void clear_validationMessageses()
+                property collectionAttribute "validationMessageses"
+                property update "true";
+    public void removeFrom_newAttributes(DocumentDomain newAttributes)
+                property collectionAttribute "newAttributes"
+                property update "true";
+    public void removeFrom_validationMessageses(string validationMessageses)
+                property collectionAttribute "validationMessageses"
+                property update "true";
+    public void set_newAttributes(java.util.Collection newAttributes domain 0,* class DocumentDomain)
+                property collectionAttribute "newAttributes"
+                property update "true";
+    public void set_validationMessageses(java.util.Collection validationMessageses domain 0,* class string)
+                property collectionAttribute "validationMessageses"
+                property update "true";
+}
+
+public class PrimaryBusinessPurposeDomain
+        extends java.lang.Enum
+        property "ads.typeId" "3"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Primary Business Purpose Domain"
+        property "de.generated" "true"
+{
+    domain {static BROKERDEALER, static CENTRALBANK, static FIDEPOSIT, static GOVERNMENT, static HDGPEVC, static INSURER, static INVESTORADVISOR, static MSB, static MUTUALFUND, static SPV}
+    public static final readonly PrimaryBusinessPurposeDomain BROKERDEALER
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BROKER DEALER";
+    public static final readonly PrimaryBusinessPurposeDomain CENTRALBANK
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CENTRAL BANK";
+    public static final readonly PrimaryBusinessPurposeDomain FIDEPOSIT
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FI DEPOSIT";
+    public static final readonly PrimaryBusinessPurposeDomain GOVERNMENT
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GOVERNMENT";
+    public static final readonly PrimaryBusinessPurposeDomain HDGPEVC
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HDG PE VC";
+    public static final readonly PrimaryBusinessPurposeDomain INSURER
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "INSURER";
+    public static final readonly PrimaryBusinessPurposeDomain INVESTORADVISOR
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "INVESTOR ADVISOR";
+    public static final readonly PrimaryBusinessPurposeDomain MSB
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MSB";
+    public static final readonly PrimaryBusinessPurposeDomain MUTUALFUND
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MUTUAL FUND";
+    public static final readonly PrimaryBusinessPurposeDomain SPV
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SPV";
+}
+
